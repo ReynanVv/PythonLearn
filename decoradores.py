@@ -5,6 +5,7 @@ def seja_educado_mesmo(funcao):
         print('Tenha um exelente dia!')
     return sendo_mesmo
 
+
 def apre(funcao):
     def apresentando():
         print('Meu nome eh Reynan')
@@ -15,8 +16,6 @@ def apre(funcao):
 @apre
 def dormir():
     print('Quero dormir...')
-    
+
+
 dormir()
-
-
-

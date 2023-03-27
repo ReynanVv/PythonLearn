@@ -11,7 +11,8 @@ class Conta:
         Conta.contador += 1
 
     def extrato(self):
-        print(f'Saldo de {self.__saldo} do titular {self.__titular} com limite de {self.__limite}')
+        print(f"Saldo de {self.__saldo} do titular {self.__titular}\
+            com limite de {self.__limite}")
 
     def depositar(self, valor):
         self.__saldo += valor
@@ -35,16 +36,17 @@ class Conta:
                 self.__valor_transferido = valor
                 conta_destino = conta_destino.__titular
                 print(
-                    f'Valor de {self.__valor_transferido} do(a) Titular {self.__titular} para o(a) titular {conta_destino}')
+                    f'Valor de {self.__valor_transferido}\
+                          do(a) Titular {self.__titular}\
+                              para o(a) titular {conta_destino}')
             else:
                 print('Saldo insuficiente')
         else:
             print('Valor deve ser positivo')
-        
-       
 
-   
-#Teste
+# Teste
+
+
 conta1 = Conta('Rey', 3000.0, 5000)
 conta1.extrato()
 
