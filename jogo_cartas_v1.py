@@ -25,7 +25,7 @@ NAIPES = '♠ ♡ ♢ ♣'.split()
 CARTAS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
 
-def criar_baralho(aleatorio=False):
+def criar_baralho(aleatorio: bool = False) -> list:
     '''Cria um baralho com 52 cartas'''
     baralho = [(n, c) for c in CARTAS for n in NAIPES]
     if aleatorio:
